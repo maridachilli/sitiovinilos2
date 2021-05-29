@@ -1,0 +1,39 @@
+:root {
+    --blanco: #FFF;
+    --negro: #000;
+}
+
+body {
+    background-color: var(--blanco);
+}
+
+.fixed {
+    background-color: var(--blanco);
+    padding: 15px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.contenido {
+    background-color: var(--blanco);
+    max-width: 100%;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.titulo {
+    display: block;
+    font-size: 2em;
+    text-decoration: underline;
+    text-align: center;
+}
+
+.titulo-interno {
+    display: block;
+    font-size: 1em;
+    text-decoration: underline;
+    text-align: center;
+}
