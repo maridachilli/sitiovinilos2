@@ -1,0 +1,130 @@
+:root {
+    --blanco: #FAFAFF;
+    --negro: #040303;
+    --gris: #6A7B76 ;
+    --verde: #3A4E48;
+    --plata: #E2E2E2;
+}
+
+body {
+    background-color: var(--blanco);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.cabecera, .contenedor {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.cabecera {
+    display: flex;
+    color: var(--negro);
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0;
+    font-size: 15px;
+
+}
+
+.contenedor {
+    background-color: var(--plata);
+}
+
+.menu ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.menu a {
+    display: block;
+    padding: 2em;
+    background-color: var(--plata);
+    transition: background-color .5s;
+    text-decoration: none;
+    color: var(--negro);
+}
+
+#check-menu-hamb:checked + .submenu-checkbox {
+    display: block;
+}
+
+input { 
+    display: none;
+}
+
+.foto-hamb {
+    height: 24px; 
+    width: 24px
+}
+
+.submenu-checkbox {
+    display: none;
+    list-style: none;
+    width: 100%;
+    background-color: var(--plata);
+}
+
+.submenu-checkbox a {
+    color: var(--negro);
+}
+
+.submenu-checkbox ul  {
+    list-style: none;
+}
+
+
+.menu a:hover {
+    background-color: var(--verde);
+}
+
+.menu ul li ul, .menu-hamburguer ul {
+    display: none;
+    position: absolute;
+}
+
+.menu ul li a:hover + ul, .menu ul li ul:hover, .menu-hamburguer img:hover + ul {
+    display: block;
+}
+
+.slider {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.imagen-slider {
+    max-width: 100%;
+}
+
+.pie {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    border-top: 1px solid var(--negro);
+}
+
+.pie-made,
+.pie-redes {
+    font-style: normal;
+}
+
+@media (max-width: 700px) {
+    .menu {
+        display: none;
+    }
+
+    .titulo {
+        display: none;
+    }
+}
+
+@media (min-width: 700px) {
+    .menu-hamburguer {
+        display: none;
+    }
+}

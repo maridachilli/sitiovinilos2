@@ -1,14 +1,19 @@
 :root {
-    --blanco: #FFF;
-    --negro: #000;
+    --blanco: #FAFAFF;
+    --negro: #040303;
+    --gris: #6A7B76 ;
+    --verde: #3A4E48;
+    --plata: #E2E2E2;
 }
 
 body {
     background-color: var(--blanco);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .fixed {
-    background-color: var(--blanco);
+    background-color: var(--verde);
+    color: var(--blanco);
     padding: 15px;
     text-align: center;
     position: fixed;
@@ -19,21 +24,20 @@ body {
 
 .contenido {
     background-color: var(--blanco);
-    max-width: 100%;
-    margin-top: 50px;
+    max-width: 100%100%;
+    margin: 50px;
     text-align: center;
 }
 
 .titulo {
     display: block;
     font-size: 2em;
-    text-decoration: underline;
-    text-align: center;
 }
 
 .titulo-interno {
     display: block;
     font-size: 1em;
     text-decoration: underline;
-    text-align: center;
 }
+
+
